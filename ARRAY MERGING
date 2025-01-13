@@ -1,0 +1,55 @@
+#include<stdio.h>
+int main(){
+
+int a[20],b[20],c[50],i,j,m,n,o;
+
+printf("enter the size of first array: ");
+scanf("%d",&m);
+printf("enter the elements\n");
+for(i=0;i<m;i++)
+{
+	scanf("%d",&a[i]);
+}
+printf("------ARRAY 1------\n");
+for(i=0;i<m;i++)
+{
+	printf("%d",a[i]);
+}
+
+
+printf("enter the size of second array: ");
+scanf("%d",&n);
+printf("enter the elements\n");
+for(j=0;j<n;j++)
+{
+	scanf("%d",&b[j]);
+}
+printf("------ARRAY 2------\n");
+for(j=0;j<n;j++)
+{
+	printf("%d",b[j]);
+}
+
+o=m+n;
+for(i=0;i<m;i++)
+{
+	c[i]=a[i];
+}
+for(j=0;j<n;j++)
+{
+	c[m]=b[j];
+	m++;
+}
+
+printf("------ MERGED ARRAY ------\n");
+for(i=0;i<o;i++)
+{
+	printf("%d",c[i]);
+}
+return 0;
+}
+
+
+
+
+
